@@ -1,7 +1,5 @@
 # typescript 学习记录
 
-## 学习 [typescript-react-starter](https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter)
-
 > 项目名：react-ts 
 
 ```
@@ -38,6 +36,29 @@ const store = createStore<IStoreState,EnthusiasmAction,null,null>(enthusiasm, {
   enthusiasmLevel: 1,
   languageName: 'TypeScript',
 });
+```
+
+
+
+> 项目名：vue-ts
+
+```javascript
+mkdir vue-ts
+cd vue-ts
+mkdir src
+cd src
+mkdir components
+
+# 大概目录结构
+vue-ts/
+--src
+----components
+
+# 安装依赖
+cnpm i -D typescript webpack webpack-cli ts-loader css-loader vue vue-loader vue-template-compiler
+
+[vue-loader](https://vue-loader.vuejs.org/migrating.html#css-modules)
+
 ```
 
 
