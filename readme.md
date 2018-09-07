@@ -13,7 +13,8 @@ cnpm i -S redux react-redux @types/react-redux
 
 ```
 ### 注意事项：
-1. Dispatch 受redux版本影响，如果报错找不到，有两种解决方案处理：
+- Dispatch 受redux版本影响，如果报错找不到，有两种解决方案处理：
+
   1. 修改package.json文件中 "@types/react-redux": "^4.0.30"
   2. 做如下修改
 ```
@@ -23,7 +24,7 @@ import { connect } from 'react-redux';
 import { Dispatch } from 'redux';
 ```
 
-2. 报 "Expected 4 type arguments, but got 1"错误,需要修改src/index.tsx文件
+- 报 "Expected 4 type arguments, but got 1"错误,需要修改src/index.tsx文件
 
 ```
 const store = createStore<IStoreState>(enthusiasm, {
